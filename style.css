@@ -1,0 +1,91 @@
+body {
+    box-sizing: border-box;
+    zoom: 70%;
+}
+#main-cont {
+    margin: 20px auto;
+    border: 10px solid blue;
+    width: 800px;
+    height: 800px;
+}
+
+#main-cont > .row {
+    width: 800px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+}
+
+#main-cont > .row:nth-of-type(2n) {
+    background-color: yellow;
+}
+
+#main-cont > .row > .square {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+}
+
+#main-cont > .row > .square:nth-of-type(2) {
+    left: 200px;
+}
+
+#main-cont > .row > .square:nth-of-type(3) {
+    left: 400px;
+}
+
+#main-cont > .row > .square:nth-of-type(4) {
+    left: 600px;
+}
+
+#main-cont > .row:nth-of-type(2n) > .square {
+    background-color: red;
+}
+
+#main-cont > .row > .checker {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 15px;
+    position: absolute;
+}
+
+#main-cont > .row > .checker:nth-of-type(6) {
+    left: 200px;
+}
+
+#main-cont > .row > .checker:nth-of-type(7) {
+    left: 400px;
+}
+
+#main-cont > .row > .checker:nth-of-type(8) {
+    left: 600px;
+}
+
+#main-cont > .row:nth-of-type(1) > .checker {
+    margin-left: 115px;
+    background-color: black;
+}
+
+#main-cont > .row:nth-of-type(3) > .checker {
+    margin-left: 115px;
+    background-color: black;
+}
+
+#main-cont > .row:nth-of-type(7) > .checker {
+    margin-left: 115px;
+    background-color: white;
+}
+
+#main-cont > .row:nth-of-type(2) > .checker {
+    background-color: black;
+}
+
+#main-cont > .row:nth-of-type(6) > .checker {
+    background-color: white;
+}
+
+#main-cont > .row:nth-of-type(8) > .checker {
+    background-color: white;
+}
